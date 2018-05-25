@@ -1,0 +1,199 @@
+<!-- CORPO DO SITE -->
+<script type="text/javascript">
+  var header = $('#cabecalho');
+
+  header.empty();
+  header.append('<h1>Case 2</h1>');
+</script>
+
+<input type="hidden" id="qte_provas" value="1"></input> <!-- variavel para marcar a quantidade de provas -->
+<input type="hidden" id="qte_trabs" value="1"></input> <!-- variavel para marcar a quantidade de trabalhos -->
+
+<div class="row border-bot">
+  <div class="col-md-12">
+      <p></p>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-md-5">
+
+    <div class="row">
+
+      <div class="col-md-4">
+          <div class="row">
+              <div class="col-md-6">
+                    <input class="btn btn-success" id="btn_prova" onclick="addProva()" type="button" value="+Prova"></input>
+              </div>
+              <div class="col-md-6">
+                  <div class="alinhamento">
+                    <input class="btn btn-danger" id="btn_prova_del" onclick="delProva()" type="button" value="-Prova"></input>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <p></p>
+          </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">P1:</span>
+                        <input id="n_p1" type="text" class="form-control" placeholder="P1" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <p></p>
+            </div>
+
+            <div id="provas"></div>
+      </div>
+      <div class="col-md-2">
+          <p></p>
+      </div>
+
+      <div class="col-md-4">
+          <div class="row">
+              <div class="col-md-6">
+                    <input class="btn btn-success" id="btn_trabalhos" onclick="addTrab()" type="button" value="+Trab"></input>
+              </div>
+              <div class="col-md-6">
+                  <div class="alinhamento">
+                    <input class="btn btn-danger" id="btn_trabalhos_del" onclick="delTrab()" type="button" value="-Trab"></input>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <p></p>
+          </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">T1:</span>
+                        <input id="n_t1" type="text" class="form-control" placeholder="T1" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <p></p>
+            </div>
+
+            <div id="trabalhos"></div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Peso P:</span>
+                        <input id="peso_p" type="text" class="form-control" placeholder="Provas" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <p></p>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Peso T:</span>
+                        <input id="peso_t" type="text" class="form-control" placeholder="Trabs" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p></p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
+        <div class="alinhamento">
+          <input class="btn btn-success" id="btn_media" onclick="envia(2)" type="button" value="Calcular"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <p></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          + Info
+        </a>
+        <div class="collapse" id="collapseExample">
+          <div class="well">
+            <p>
+              Insira a(s) nota(s) da(s) prova(s) Pi;
+              <br>
+              Insira a(s) nota(s) do(s) trabalho(s) Ti;
+              <br>
+              Insira o peso da(s) prova(s) em Peso P;
+              <br>
+              Insira o peso do(s) trabalho(s) em Peso T;
+              <br>
+              Para adicionar mais provas, clique em +Prova;
+              <br>
+              Para 'excluir' uma prova, clique em -Prova;
+              <br>
+              Para adicionar mais trabalhos, clique em +Trab;
+              <br>
+              Para 'excluir' um trabalho, clique em -Trab;
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-1">
+    <p></p>
+  </div>
+
+  <div class="col-md-6">
+      <div class="row">
+          <div id="retorno">
+
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <p></p>
+    </div>
+    <div class="col-md-1">
+        <p></p>
+    </div>
+    <div class="col-md-6">
+        <div id="plot">
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+  $('#fx').focus();
+
+</script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <div id="head">
+         <meta charset="utf-8">
+         <meta name="description" content="Cases Jr"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+         <title>Cases Jr</title>
+
+         <link rel="stylesheet" href="css/bootstrap.css">
+         <!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
+         <link rel="stylesheet" href="css/style.css">
+
+         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+         <script type="text/javascript" src="js/bootstrap.js"></script>
+
+         <script type="text/javascript" src="highcharts/code/highcharts.js"></script>
+         <script type="text/javascript" src="highcharts/code/modules/exporting.js"></script>
+
+         <script type="text/javascript" src="func.js"></script> <!-- funções da pagina -->
+         <script type="text/javascript" src="js/math.js"></script> <!-- biblioteca math.js -->
+     </div>
+  </head>
+
+  <body>
+    <div id="nav">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Início</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul id="nave" class="nav navbar-nav">
+                    <li><a onclick="carregar('case1/case1.html')">Marcador de faltas</a></li>
+                    <li><a onclick="carregar('case2/case2.html')">Cálculo de notas</a></li>
+                    <li><a onclick="carregar('case3/case3.html')">Bitcoins</a></li>
+                </ul>
+
+
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+    </div>
+
+
+    <header class="jumbotron">
+      <div class="container">
+        <div id="cabecalho">
+          <h1>Cases</h1>
+          <p></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- CORPO DO SITE -->
+
+    <div id="corpo" class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+        <h1>Opções</h1>
+        <p><a onclick="carregar('case1/case1.html')">Marcador de faltas</p>
+		<p><a onclick="carregar('case2/case2.html')">Cálculo de notas</p>
+		<p><a onclick="carregar('case3/case3.html')">Bitcoins</p>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+        <footer class="footer">
+          <div class="container">
+            <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+            <p>Projeto construído utilizando o Twitter Bootstrap, Javascript.</p>
+            <p>Bibliotecas:<a href="https://www.highcharts.com/">Highcharts</a>.</p>
+            <br>
+            <p><a href="http://glyphicons.com">Glyphicons grátis</a> licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0</a>.</p>
+            <br>
+            <p> Giulia Moura Crusco, RA: 161021761</p>
+          </div>
+        </footer>
+    </div>
+
+  </body>
+</html>

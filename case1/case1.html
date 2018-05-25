@@ -1,0 +1,112 @@
+<!-- CORPO DO SITE -->
+<script type="text/javascript">
+  var header = $('#cabecalho');
+
+  header.empty();
+  header.append('<h1>Case 1</h1>');
+</script>
+
+<div class="row border-bot">
+  <div class="col-md-12">
+      <p></p>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-md-5">
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">HD:</span>
+          <input id="hd" type="text" class="form-control" placeholder="Horas Aula" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">C:</span>
+          <input id="cred" type="text" class="form-control" placeholder="Créditos" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">HF:</span>
+          <input id="hf" type="text" class="form-control" placeholder="Faltas" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <p></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
+        <div class="alinhamento">
+          <input class="btn btn-success" id="btn_inter" onclick="envia(1)" type="button" value="Calcular"></input>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <p></p>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          + Info
+        </a>
+        <div class="collapse" id="collapseExample">
+          <div class="well">
+            <p class="recuo">
+              Insira o total de horas aulas dadas até o momento (HD),
+              os créditos da matéria (C) e
+              o total de horas aulas que você faltou (HF).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-1">
+    <p></p>
+  </div>
+
+  <div class="col-md-6">
+      <div class="row">
+          <div id="retorno">
+
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <p></p>
+    </div>
+    <div class="col-md-1">
+        <p></p>
+    </div>
+    <div class="col-md-6">
+        <div id="plot">
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+  $('#fx').focus();
+
+</script>

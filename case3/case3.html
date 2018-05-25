@@ -1,0 +1,116 @@
+<!-- CORPO DO SITE -->
+<script type="text/javascript">
+  var header = $('#cabecalho');
+
+  header.empty();
+  header.append('<h1>Case 3</h1>');
+</script>
+
+<div class="row border-bot">
+  <div class="col-md-12">
+      <p></p>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-md-5">
+
+
+    <div class="row">
+     <table class="table">
+		<caption>Inserir os valores do bitcoin nos sites A, B e C nos instantes 1, 2 e 3</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">A</th>
+				<td><input id="a11" class="form-control" value="1010"></input></td>
+				<td><input id="a12" class="form-control" value="1200"></input></td>
+				<td><input id="a13" class="form-control" value="1500"></input></td>
+			</tr>
+			<tr>
+				<th scope="row">B</th>
+				<td><input id="a21" class="form-control" value="1003"></input></td>
+				<td><input id="a22" class="form-control" value="1198"></input></td>
+				<td><input id="a23" class="form-control" value="1450"></input></td>
+			</tr>
+			<tr>
+				<th scope="row">C</th>
+				<td><input id="a31" class="form-control" value="1025"></input></td>
+				<td><input id="a32" class="form-control" value="1151"></input></td>
+				<td><input id="a33" class="form-control" value="1612"></input></td>
+			</tr>
+		</tbody>
+	</table>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
+        <div class="alinhamento">
+          <input class="btn btn-success" id="btn_inter" onclick="envia(3)" type="button" value="Calcular"></input>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <p></p>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          + Info
+        </a>
+        <div class="collapse" id="collapseExample">
+          <div class="well">
+            <p class="recuo">
+              Calcula o valor do lucro obtido nos sites A, B e C
+			  e nos instantes 1, 2 e 3.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-1">
+    <p></p>
+  </div>
+
+  <div class="col-md-6">
+      <div class="row">
+          <div id="retorno">
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <p></p>
+    </div>
+    <div class="col-md-1">
+        <p></p>
+    </div>
+    <div class="col-md-6">
+        <div id="plot">
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+  $('#fx').focus();
+
+</script>
